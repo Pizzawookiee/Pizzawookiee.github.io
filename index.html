@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Filmmaker Portfolio</title>
+    <!-- Simple, cinematic dark styling -->
+    <style>
+        :root { --bg: #0a0a0c; --text: #f3f4f6; --accent: #ff3e3e; --card: #16161a; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        header { padding: 4rem 2rem text-align: center; background: linear-gradient(to bottom, #111, var(--bg)); }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        .tagline { color: #888; font-size: 1.1rem; margin-top: 0.5rem; }
+        nav { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+        nav a { color: var(--text); text-decoration: none; font-weight: 500; }
+        nav a:hover { color: var(--accent); }
+        section { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+        h2 { border-bottom: 2px solid #222; padding-bottom: 0.5rem; margin-bottom: 2rem; font-size: 1.8rem; }
+        
+        /* Video Grid Layout */
+        .film-grid { display: flex; flex-direction: column; gap: 3.5rem; }
+        .film-card { background: var(--card); border-radius: 8px; overflow: hidden; border: 1px solid #222; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .film-info { padding: 1.5rem; }
+        .film-title { margin: 0 0 0.5rem 0; font-size: 1.4rem; color: #fff; }
+        .film-desc { color: #aaa; margin: 0; font-size: 0.95rem; }
+        
+        /* Resume Styling */
+        .resume-item { margin-bottom: 1.5rem; }
+        .resume-meta { display: flex; justify-content: space-between; color: #888; font-size: 0.9rem; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+        .tag { background: #222; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>David T. Lee</h1>
+        <div class="tagline">AI Filmmaker & Creative Technologist</div>
+        <nav>
+            <a href="#films">Films</a>
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
+
+    <!-- FILMS SECTION -->
+    <section id="films">
+        <h2>Selected Films</h2>
+        <div class="film-grid">
+            
+            <!-- Film 1 -->
+            <div class="film-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=wrY93Z8w_9M" allowfullscreen></iframe>
+                </div>
+                <div class="film-info">
+                    <h3 class="film-title">The Last Time I Saw Da Vinci</h3>
+                    <p class="film-desc">NOMINEE: PixVerse Award, 2026 MIT Global AI Film Hack. In 1517, exiled leader Niccolo Machiavelli makes one last visit to his longtime friend Leonardo Da Vinci. Leonardo has one final creation to show Niccolo, something shocking that will test their relationship...</p>
+                </div>
+            </div>
+
+            <!-- Film 2 -->
+            <div class="film-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=8bwMEXAnxSo" allowfullscreen></iframe>
+                </div>
+                <div class="film-info">
+                    <h3 class="film-title">Not Gonna Make It</h3>
+                    <p class="film-desc">A terrible first date.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+        <h2>Resume / Experience</h2>
+        <p><a href="resume.pdf" target="_blank" style="color: #ff3e3e; text-decoration: underline; font-weight: bold;">👉 Download / View PDF Resume</a></p>
+        
+        <div class="resume-item">
+            <div class="resume-meta">
+                <strong>Freelance AI Director & Editor</strong>
+                <span>2024 - Present</span>
+            </div>
+            <p>Directing commercial assets and narrative shorts utilizing text-to-video and image-to-video pipelines. Specializing in prompt engineering, style consistency, and hybrid AI/traditional VFX workflows.</p>
+        </div>
+
+        <div class="resume-item">
+            <h2>AI Tool Stack</h2>
+            <div class="tech-tags">
+                <span class="tag">Seedance 2.0</span>
+                <span class="tag">Suno</span>
+                <span class="tag">Eleven Labs</span>
+                <span class="tag">Flux Klein</span>
+                <span class="tag">Nano Banana</span>
+                <span class="tag">DaVinci Resolve</span>
+                <span class="tag">Topaz Labs Video AI</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
